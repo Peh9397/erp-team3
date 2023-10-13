@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:insert="~{/header.html::header}"></th:block>
+<head><meta charset="UTF-8"><title>Insert title here</title>
+</head><body>
+	<header th:fragment="headerFragment">
+		<a href="/index" class="btn btn-success">인덱스</a>
+		<a href="/hello" class="btn btn-info">hello</a>
+		<div style="border: 2px solid green;">
+			나는 머리글이야
+		</div>
+	</header>
+</body>
+</html>

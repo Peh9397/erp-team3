@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<th:block th:insert="~{/header.html::header}"></th:block>
+<head><meta charset="UTF-8"><title>Insert title here</title>
+</head><body>
+	<!--fragments폴더안에 header.html안에 headerFragment소스를 가져와서 실행-->
+	<header th:replace="~{/fragments/header::headerFragment}"></header>
+	<div layout:fragment="content"></div>
+	<footer th:replace="~{/fragments/footer::footerFragment}"></footer>
+</body>
+</html>
